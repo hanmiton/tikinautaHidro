@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<!-- smoosh -->
+	<link rel="stylesheet" href="./css/main.css">
+	<!-- endsmoosh -->
+	
+</head>
+<body>
+	<!--seccoin formulario-->
+    <section id="formulario" class="padreform">
+    	<div class="padreform-encabezado">
+    		<div class="padreform-encabezado-titulo imagen">
+			</div>
+    	</div>
+    	<div class="padreform-robot">
+    		<div class="padreform-robot-img imagen">
+    		</div>
+    	</div>
+    	<div class="padreform-llenar">
+    		<div class="padreform-nombre">
+    			<div class="padreform-nombre-campo">
+    				<div id="EElogo1" class="padreform-nombre-campo-logo1">
+    				</div>
+    				<div id="EElogo2" class="padreform-nombre-campo-logo1">
+    				</div>
+    			</div>
+		  		<button id="comenzar" class="padreform-nombre-boton">Comenzar</button>
+    		</div>
+    	</div>	
+    </section>
+
+	<!--Escena numero 1-->
+
+	<section id="fondo" class="padre">
+			<div class="padre-h1">
+				<div class="padre-h1-c1">
+					<div id="img1" class="padre-h1-c1-img"></div>
+					<div id="img2" class="padre-h1-c1-img"></div>
+				</div>
+				<div class="padre-h1-c1">
+					<div id="img3" class="padre-h1-c1-img"></div>
+					<div id="img4" class="padre-h1-c1-img"></div>
+				</div>
+			</div>
+			<div class="padre-h1">
+				<div id="img5" class="padre-h1-c1-img"></div>
+				<div id="img6" class="padre-h1-c1-img"></div>
+				<div id="img7" class="padre-h1-c1-img"></div>
+			</div>
+	</section>
+
+    <!--Escena numero 2-->
+    <section id="fondo2" class="padre">
+            <div class="padre-h1">
+                <div class="padre-h1-c1">
+                    <div id="img1" class="padre-h1-c1-img"></div>
+                    <div id="img2" class="padre-h1-c1-img"></div>
+                </div>
+                <div class="padre-h1-c1">
+                    <div id="img3" class="padre-h1-c1-img"></div>
+                    <div id="img4" class="padre-h1-c1-img"></div>
+                </div>
+            </div>
+            <div class="padre-h1">
+                <div id="img5" class="padre-h1-c1-img"></div>
+                <div id="img6" class="padre-h1-c1-img"></div>
+                <div id="img7" class="padre-h1-c1-img"></div>
+            </div>
+    </section>
+
+	<!--Parte del menu de la app-->
+	<section id="menu" class="menu">
+        <div class="menu-escenas">
+            <div id="Escena1" class="menu-escenas-escena">
+            </div>
+            <div id="Escena2" class="menu-escenas-escena">
+            </div>
+            <div id="Escena3" class="menu-escenas-escena">
+            </div>
+            <div id="Escena4" class="menu-escenas-escena">
+            </div>
+            <div id="Escena5" class="menu-escenas-escena">
+            </div>  
+            <div id="Escena6" class="menu-escenas-escena">
+            </div>
+            <div id="Escena7" class="menu-escenas-escena">
+            </div>
+        </div>
+    </section>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- smoosh -->
+  	<script src="./js/bundle.js"></script>
+  	<!-- endsmoosh -->
+  	<script>
+        window.onload = function() {
+            document.onmousemove = function(e) {
+                var x = -(e.clientX/40);
+                var y = -(e.clientY/40);
+                this.body.style.backgroundPosition = x + 'px ' + y + 'px';
+            };
+        };
+  	</script>
+</body>
+</html>
