@@ -1,3 +1,5 @@
+
+/*efectos del formulario*/
 $(document).ready(function(){
   $('#comenzar').click(function(){  
     $("#formulario").hide("slow");
@@ -9,11 +11,18 @@ $(document).ready(function(){
 });
 
 
+/*efectos de la primera pantalla*/
+$(document).ready(function(){
+  $('#img8').click(function(){  
+    $("#img8, #img9").hide("slow");
+  	});
+});
+
 /*cambio pantalla 1*/
 	$(document).ready(function(){
 		$('#Escena1').click(function(){
 			/*Ocultar escenas excepto la 2*/	
-			$('body').css('background-image', 'url(res/img/Escena1/fondo-1.png)');
+			$('body').css('background-image', 'url(../img/fondo1.png)');
 			$("#fondo2").hide("slow");
 			$("#fondo3").hide("slow");
 			$("#fondo4").hide("slow");
@@ -29,7 +38,8 @@ $(document).ready(function(){
 /*cambio pantalla 2*/
 	$(document).ready(function(){
 		$('#Escena2').click(function(){
-			/*Ocultar escenas excepto la 2*/	
+			/*Ocultar escenas excepto la 2*/
+			$('body').css('background-image', 'url(../img/fondo2.png)');	
 			$("#fondo").hide("slow");
 			$("#fondo3").hide("slow");
 			$("#fondo4").hide("slow");
@@ -45,7 +55,7 @@ $(document).ready(function(){
 	$(document).ready(function(){
 		$('#Escena3').click(function(){
 			/*Ocultar escenas excepto la 2*/	
-			$('body').css('background-image', 'url(res/img/Escena1/fondo-2.png)');
+			$('body').css('background-image', 'url(../img/fondo3.png)');
 			$("#fondo").hide("slow");
 			$("#fondo2").hide("slow");
 			$("#fondo4").hide("slow");
